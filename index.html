@@ -29,19 +29,19 @@
 
         <div class="row">
 
-            <div class="col1">
+            <div class="col1 hidden">
                 <img src="mypic.png" class="mypic" alt="logo">
                 <h1 class="myname">KRISTIAN CARLO <br> FRANCISCO</h1>
             </div>
             <div class="phone-version">
                 <img src="me-text.png" class="mypic" alt="logo">
             </div>
-            <div class="col2">
-                
+            <div class="col2 hidden">
+
                 <h2>Aspiring Full Stack Developer</h2>
                 <br>
                 <p>Who is currently using his creativity and skills</p>
-                <p class ="p-indent">to make a change in the society</p>
+                <p class="p-indent">to make a change in the society</p>
                 <div class="socials">
                     <ul>
                         <li>
@@ -62,16 +62,18 @@
     <div class="about-section" id="aboutsection">
 
         <div class="about-row">
-            <div class="about-col1">
+            <div class="about-col1 about-hide">
                 <img src="about_me.jpg" class="about-me">
             </div>
-            <div class="about-col2">
+            <div class="about-col2 about-hide">
                 <h1 class="about-title"> ABOUT ME </h1>
                 <p class="about-paragraph">
-                    Hi ! I am Kristian Carlo Seville Francisco but you can call me Carlo for short. 
-                    I live in Sta.Barbara Pangasinan and I am currently 21 years old. 
-                    I am a reliable, responsible and hard working person. And I believe that 
-                    "If you want a rainbow, you must first go through the rain"
+                    Hi, I am Kristian Carlo Seville Francisco.
+                    I live in Sta.Barbara Pangasinan and I am currently 21 years old.<br>
+                    My journey has led me through various experiences, from being an absolute beginner to immersing myself in the
+                    captivating realm of Information technoly. I am a reliable, responsible and hard working person. I am passionate about fostering a culture of
+                    innovation and collaboration, ensuring that technology not only meets functional needs but also
+                    enhances human experiences.
                 </p>
 
                 <div class="tab-titles">
@@ -119,28 +121,30 @@
     </div>
     <div id="skills">
         <div class="skills-container">
-           <center><h1 class="skills-title"> My Skills </h1></center> 
+            <center>
+                <h1 class="skills-title"> My Skills </h1>
+            </center>
             <div class="skills-list">
-                <div>
+                <div class="skills-hide">
                     <center> <img src="android.png" alt=""> </center>
                     <h2>Android</h2>
                     <p>I have skills in Android App Development specifically in Java Programming Language</p>
 
                 </div>
-                <div>
+                <div class="skills-hide">
                     <center><img src="flutter.png" alt=""></center>
                     <h2>Flutter</h2>
                     <p>I have experience in developing applications with the use of flutter framework</p>
 
                 </div>
-                <div>
+                <div class="skills-hide">
                     <center><img src="web.png" alt=""></center>
                     <h2>Web Designs</h2>
                     <p>I have knowledge in using html, css and a little bit of javascript in creating Web Designs
                     </p>
 
                 </div>
-                <div>
+                <div class="skills-hide">
                     <center> <img src="java.png" alt=""></center>
                     <h2>Java Swing</h2>
                     <p>I have experience in developing window-based applications using Swing, a GUI widget toolkit
@@ -155,67 +159,71 @@
 
     <section class="myproj" id="myproj">
         <div class="proj-container">
-            <center><h2 class="projects-title">Projects</h2></center>
-       
-        <div class="projects-container-box">
-            <div class="projects-box">
-                <img src="poptap.png" class ="proj-logo">
-                <h3> Pop Tap</h3>
-                <p> Pop Tap was the first flutter application development that I led </p>
-                <div class="proj-link">
-                    <a href="#"> <i class="fa-brands fa-github"></i></a>
+            <center>
+                <h2 class="projects-title">Projects</h2>
+            </center>
+
+            <div class="projects-container-box">
+                <div class="projects-box project-hide">
+                    <img src="poptap.png" class="proj-logo">
+                    <h3> Pop Tap</h3>
+                    <p> Pop Tap was the first flutter application development that I led </p>
+                    <div class="proj-link">
+                        <a href="https://github.com/kcsf77/Pop-Tap"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="layer">
+                        <img src="ss_poptap.jpg" class="layer-img">
+                    </div>
                 </div>
-                <div class="layer">
-                    <img src = "ss_poptap.jpg" class="layer-img">
+                <div class="projects-box project-hide">
+                    <img src="betterbrain.png" class="proj-logo">
+                    <h3> Better Brain</h3>
+                    <p> My first android project which I worked with a team </p>
+                    <div class="proj-link">
+                        <a href="https://github.com/kcsf77/Better-Brain"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <div class="layer">
+                        <img src="ss_betterbrain.jpg" class="layer-img">
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="projects-box">
-                <img src="betterbrain.png" class ="proj-logo">
-                <h3> Better Brain</h3>
-                <p> My first android project which I worked with a team </p>
-                <div class="proj-link">
-                    <a href="#"> <i class="fa-brands fa-github"></i></a>
+                <div class="projects-box project-hide">
+                    <img src="clickline.png" class="proj-logo">
+                    <h3> Click Line</h3>
+                    <p> A personal project that I made in our semestral break </p>
+                    <div class="proj-link">
+                        <a href="https://github.com/kcsf77/Click-Line"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="layer">
+                        <img src="ss_clickline.jpg" class="layer-img">
+                    </div>
                 </div>
-                
-                <div class="layer">
-                    <img src = "ss_betterbrain.jpg" class="layer-img">
-                    
+                <div class="projects-box project-hide">
+                    <img src="contact_tracing.png" class="proj-logo">
+                    <h3> Contact Tracing</h3>
+                    <p> My first ever project in java on my first year of coding</p>
+                    <div class="proj-link">
+                        <a href="https://github.com/kcsf77/Contact-Tracing"> <i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="layer">
+                        <img src="ss_ct.png" class="layer-img">
+
+                    </div>
                 </div>
-            </div>
-            <div class="projects-box">
-                <img src="clickline.png" class ="proj-logo">
-                <h3> Click Line</h3>
-                <p> A personal project that I made in our semestral break </p>
-                <div class="proj-link">
-                    <a href="#"> <i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="layer">
-                    <img src = "ss_clickline.jpg" class="layer-img">
-                </div>
-            </div>
-            <div class="projects-box">
-                <img src="contact_tracing.png" class ="proj-logo">
-                <h3> Contact Tracing</h3>
-                <p> My first ever project in java on my first year of coding</p>
-                <div class="proj-link">
-                    <a href="#"> <i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="layer">
-                    <img src = "ss_ct.png" class="layer-img">
-                   
-                </div>
-            </div>
 
 
-        </div>
-        
+            </div>
+
         </div>
 
     </section>
 
-    <div class="contact" id = "contact">
+    <div class="contact contact-hide" id="contact">
         <div class="contact-container">
-           <center> <h2 class = "contact-title"> Contact Me</h2></center>
+            <center>
+                <h2 class="contact-title"> Contact Me</h2>
+            </center>
             <div class="contact-row">
                 <div class="left">
                     <h1 class="sub-title">Kristian Carlo Francisco</h1>
@@ -235,6 +243,8 @@
                         <button type="submit" class="btn">Submit</button>
                     </form>
 
+                    <span id = "msg"></span>
+
 
                 </div>
             </div>
@@ -242,6 +252,125 @@
     </div>
 
 
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry); {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+
+
+                    } else {
+                        entry.target.classList.remove('show');
+
+                    }
+                }
+            });
+
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden')
+        hiddenElements.forEach((el) => observer.observe(el));
+
+
+
+        const observer2 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry); {
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('about-show')
+
+                    } else {
+
+                        entry.target.classList.remove('about-show')
+                    }
+                }
+            });
+
+        });
+
+
+        const about_elements = document.querySelectorAll('.about-hide');
+        about_elements.forEach((el) => observer2.observe(el));
+
+        const observer3 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry); {
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('skills-show')
+
+                    } else {
+
+                        entry.target.classList.remove('skills-show')
+                    }
+                }
+            });
+
+        });
+
+        const skillsElements = document.querySelectorAll('.skills-hide');
+        skillsElements.forEach((el) => observer3.observe(el));
+
+
+
+        const observer4 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry); {
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('project-show')
+
+                    } else {
+
+                        entry.target.classList.remove('project-show')
+                    }
+                }
+            });
+
+        });
+        const projectElements = document.querySelectorAll('.project-hide');
+        projectElements.forEach((el) => observer4.observe(el));
+
+
+
+
+        const observer5 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry); {
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add('contact-show')
+
+                    } else {
+
+                        entry.target.classList.remove('contact-show')
+                    }
+                }
+            });
+
+        });
+        const projectElement = document.querySelector('.contact-hide');
+        observer5.observe(projectElement);
+
+
+
+
+
+
+
+
+
+        const contactElements = document.querySelectorAll('.contact-hide')
+
+
+
+
+
+
+    </script>
 
 
 
@@ -283,11 +412,18 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbysLscCmC6D-S0iFEj56kbY88V5nOM2PNqWYMwumfc8dmkPorracIANLHTrYWiiSz8W/exec'
         const form = document.forms['submit-to-google-sheet']
+        const mess = document.getElementById("msg");
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => window.alert("submitted"), form.reset())
+                .then(response => {
+                    mess.innerHTML = "Message Sent!" 
+                    setTimeout(function(){
+                        mess.innerHTML =""
+                    }, 5000)
+                    form.reset()
+                })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
