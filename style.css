@@ -4,12 +4,14 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Arial;
+    
    
 }
 
 body{
     background:#28282B ;
     color: white;
+    overflow-x: hidden;
  
 }
 
@@ -81,6 +83,7 @@ nav ul li a:hover::after{
 }
 
 .hidden{
+  
   opacity: 0;
   filter: blur(2px);
   transform: translateY(-20%);
@@ -94,7 +97,7 @@ nav ul li a:hover::after{
 }
 
 .col1 {
-    flex-basis: 60%;
+    flex-basis: 50%;
     
 }
 
@@ -168,7 +171,7 @@ nav ul li a:hover::after{
 .about-hide{
 
   filter: blur(5px);
-  transform: translateX(100%);
+  transform: translateX(50%);
   transition: 1s;
 
 }
@@ -198,7 +201,7 @@ padding-top: 80px;
 }
 
 .about-col1{  
-    flex-basis: 40%;
+flex-basis: 40%;
 
 }
 
@@ -208,41 +211,29 @@ border-radius: 20px;
 }
 
 .about-col2{
-    flex-basis: 60%;
+    flex-basis: 55%;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
 }
 .about-title{   
-    
+    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
-    padding: 10px;
+  
     white-space: nowrap;
-    overflow: hidden;
-    width: 13ch;
-    border-right: 4px solid white;
-    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+   border-bottom:.1em solid wheat;
+   
     
 }
 
 .about-paragraph {
     margin-top: 40px;
+    text-indent: 40px;
     
    
 }
 
-@-webkit-keyframes typing {
-    from {
-        width: 0;
-    }
-}
-@-webkit-keyframes blink-caret {
-    50% {
-        border-color: transparent;
-    }
 
-} 
 
 .tab-titles{
     display: flex;
@@ -326,7 +317,7 @@ border-radius: 20px;
 
   .skills-container{
     padding: 0 40px;
-    padding-top: 70px;
+    padding-top: 80px;
     text-align: center;
   }
     
@@ -347,7 +338,7 @@ border-radius: 20px;
    text-transform: uppercase;
    font-size: 40px;
    padding-bottom: 20px;
-   border-bottom:.1em solid #fff;
+   border-bottom:.1em solid wheat;
   }
 
   .skills-hide{
@@ -385,7 +376,7 @@ border-radius: 20px;
     padding: 40px;
     font-size: 20px;
     font-weight: 200;
-    border-radius: 30px;
+    border-radius: 20px;
 
 
   }
@@ -443,7 +434,7 @@ border-radius: 20px;
     font-size: 40px;
     margin-bottom: 50px;
     max-width: 400px;
-    border-bottom:.1em solid #fff;
+    border-bottom:.1em solid wheat;
     text-transform: uppercase;
     padding-top: 80px;
     padding-bottom: 20px;
@@ -568,14 +559,14 @@ border-radius: 20px;
   .contact{
     background-color: 24262b;
     min-height: 90vh;
-    padding: 100px 150px 10px 150px;
+    padding: 90px 150px 10px 150px;
     
   }
   .contact-title{
     font-size: 40px;
     margin-bottom: 50px;
     max-width: 400px;
-    border-bottom:.1em solid #fff;
+    border-bottom:.1em solid wheat;
     text-transform: uppercase;
     
     padding-bottom: 20px;
@@ -583,7 +574,7 @@ border-radius: 20px;
 
   .contact-hide{
 
-    transition: 2s;
+    transition: 3s;
     opacity: 0;
   }
 
@@ -614,6 +605,7 @@ border-radius: 20px;
 
 .left p {
   margin-top: 30px;
+  font-weight: 500;
 }
 .left p i {
   color: white;
@@ -635,15 +627,19 @@ border-radius: 20px;
 
 .contact-socials a{
   text-decoration: none;
-  font-size: 15px;
+  font-size: 10px;
   margin-right: 15px;
   color: white;
   display: inline-block;
+  border: 2px solid white;
+  padding: 7px;
+  border-radius: 50%;
 
 }
 
 .contact-socials a:hover{
-  transform: translateY(-2px);
+  background-color: white;
+  color: #000;
 }
 
 .btn{
@@ -669,7 +665,7 @@ form input, form textarea{
   width: 100%;
   border: 0;
   outline: none;
-  background: #DCDCDC;
+  background: #FFF0F5;
   margin: 15px 0;
   color: black;
   font-size: 15px;
@@ -696,9 +692,11 @@ nav .fa-solid{
 @media only screen and (max-width: 600px) {
     
      
-    
-    body{
+    *{
       overflow-x: hidden;
+    }
+    body{
+      
     }
   
 
@@ -739,15 +737,15 @@ nav .fa-solid{
     nav img{
       position: relative;
       right: 80px;
-      height: 80px;
+      
       margin-left: 30px;
       
      
       
     }
     nav {
-      height: 100px;
-      position: relative;
+      height: 80px;
+      width: 100%;
       padding: 5px;
       position: fixed;
       z-index: 3;
@@ -757,7 +755,6 @@ nav .fa-solid{
       width: 100%;
       display: block;
       overflow: hidden;
-      
       
       
     }
@@ -806,14 +803,6 @@ nav .fa-solid{
     width: 80%;
 }
 
-.myname {
-    position: relative;
-    top: -100px;
-    left:80px;
-    text-indent: 1px;
-    font-size: 15px;
-    
-}
 
 .col2{
   margin-top: 50px;
@@ -824,7 +813,7 @@ nav .fa-solid{
 
 .about-section{
   
-  padding: 10px;
+  padding: 20px;
   background-color: #191919;
   min-height: 120vh;
 
@@ -842,6 +831,7 @@ nav .fa-solid{
   .about-col1{  
      display:flex;
      justify-content: center;
+     width: 100%;
   
   }
   
@@ -852,6 +842,7 @@ nav .fa-solid{
   }
   
   .about-col2{
+    width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -861,14 +852,10 @@ nav .fa-solid{
 
   .about-title{   
     text-align: center;
-      font-size: 50px;
-      padding: 10px;
-      white-space: nowrap;
-      overflow: hidden;
-      width: 13ch;
-      border-right: 4px solid white;
-      animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
-      
+    font-size: 50px;
+    padding: 10px;
+    white-space: nowrap;
+        
   }
   
   .about-paragraph {
@@ -881,9 +868,13 @@ nav .fa-solid{
   .tab-titles{
     display: flex;
     justify-content: center;
-   margin-left: 40px;
+   
+     margin-left: 40px;
+     
    
 }
+
+
 
 
 .tab-links{
